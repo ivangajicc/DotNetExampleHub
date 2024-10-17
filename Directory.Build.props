@@ -1,0 +1,66 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>Recommended</AnalysisMode>
+
+    <IsTestProject>false</IsTestProject>
+    <IsTestProject Condition="$(MSBuildProjectName.EndsWith('Tests'))">true</IsTestProject>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="$(IsTestProject)">
+    <!-- CA1707: Underscores in methods names are allowed in test projects for test method naming convention reasons -->
+    <!-- IDISP013 is await in using which is a false positive for test projects because of mocking -->
+    <!-- SA1201 is methods after all properties which can be different in test classes -->
+    <!-- RCS1046: Async suffix in methods names are not needed in test projects for test method naming convention reasons  -->
+    <!-- CA1000: Do not declare static members on generic types -->
+    <!-- S2743: A static field in a generic type is not shared among instances of different close constructed types. -->
+    <!-- S2699: Add at least one assertion to this test case. -->
+    <NoWarn>$(NoWarn);CA1707;RCS1046;IDISP013,SA1201,CA1000,S2743,S2699</NoWarn>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);CA1707;RCS1046;IDISP013,SA1201</WarningsNotAsErrors>
+    <IsPackable>false</IsPackable>
+    <SonarQubeTestProject>true</SonarQubeTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>$(AssemblyName).Tests</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Roslynator.Analyzers" PrivateAssets="all"/>
+    <PackageReference Include="IDisposableAnalyzers" PrivateAssets="all"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(IsTestProject)">
+    <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+    <PackageReference Include="coverlet.collector"/>
+    <PackageReference Include="xunit"/>
+    <PackageReference Include="FluentAssertions"/>
+    <PackageReference Include="FluentAssertions.Analyzers"/>
+    <PackageReference Include="Moq"/>
+    <PackageReference Include="AutoFixture"/>
+    <PackageReference Include="AutoFixture.AutoMoq"/>
+
+    <Using Include="Xunit"/>
+    <Using Include="Moq"/>
+    <Using Include="Moq.Protected"/>
+    <Using Include="AutoFixture"/>
+    <Using Include="FluentAssertions"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(IsTestProject) and !$(TargetFramework.StartsWith('netstandard'))">
+    <PackageReference Include="xunit.runner.console"/>
+    <PackageReference Include="xunit.runner.visualstudio"/>
+  </ItemGroup>
+</Project>
