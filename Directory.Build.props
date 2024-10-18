@@ -38,6 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" PrivateAssets="all"/>
+    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="all"/>
+    <PackageReference Include="SonarAnalyzer.CSharp" PrivateAssets="all"/>
     <PackageReference Include="Roslynator.Analyzers" PrivateAssets="all"/>
     <PackageReference Include="IDisposableAnalyzers" PrivateAssets="all"/>
   </ItemGroup>
