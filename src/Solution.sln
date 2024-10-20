@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitExamples.Tests", "XUni
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XunitExamples", "XunitExamples", "{63C64454-F2DE-4A3F-8766-94B908B8786D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiIntegrationTestExample", "WebApiIntegrationTestExample", "{FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiIntegrationTestExample.WebApi", "XUnitExamples\WebApiIntegrationTestExample\WebApi\WebApiIntegrationTestExample.WebApi.csproj", "{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiIntegrationTestExample.WebApi.Integration.Tests", "XUnitExamples\WebApiIntegrationTestExample\WebApi.Integration.Tests\WebApiIntegrationTestExample.WebApi.Integration.Tests.csproj", "{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +20,19 @@ Global
 		{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7} = {63C64454-F2DE-4A3F-8766-94B908B8786D}
+		{FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2} = {63C64454-F2DE-4A3F-8766-94B908B8786D}
+		{2D40D8E5-0F66-4EBF-A003-8CA6864CF906} = {FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2}
+		{41EB3D1A-F2F3-4E36-B518-1889D5B505D0} = {FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2}
 	EndGlobalSection
 EndGlobal
