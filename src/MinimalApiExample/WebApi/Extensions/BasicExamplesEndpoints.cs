@@ -13,25 +13,10 @@ public static class BasicExamplesEndpoints
         MapBasicJsonSerializationConfigurationExample(app);
     }
 
-    private static void MapBasicJsonSerializationConfigurationExample(IEndpointRouteBuilder app)
-    {
-        var enumSerializer = new JsonSerializerOptions(JsonSerializerDefaults.Web);
-        enumSerializer.Converters.Add(new JsonStringEnumConverter());
-
-        var jsonGroup = app.MapGroup("json-serialization").WithTags("Serializer Endpoints");
-        jsonGroup.MapGet(
-            "enum-as-string/",
-            () => TypedResults.Json(
-                new { Property1 = "Value1", Property2 = "Value2", EnumProperty = Example.ImFirst, },
-                enumSerializer)).WithOpenApi();
-        jsonGroup.MapGet(
-            "enum-as-int/",
-            () => TypedResults.Json(
-                new { Property1 = "Value1", Property2 = "Value2", EnumProperty = Example.ImFirst, }));
-    }
-
     private static void MapBasicMetadataExample(IEndpointRouteBuilder app)
     {
+        // MapGroup(someString) will add someString as part of base url (e.g. localhost:5200/someString)
+        // WithTags(someTag) will affect swagger to group all endpoints together where someTag will reflect as grouping label.
         var endpointMetadataGroup =
             app.MapGroup("basic-examples-metadata").WithTags("Basic Examples Endpoints").WithOpenApi();
 
@@ -65,5 +50,27 @@ public static class BasicExamplesEndpoints
                     endpointName.Example = new OpenApiString(someName);
                     return operation;
                 });
+    }
+
+    private static void MapBasicJsonSerializationConfigurationExample(IEndpointRouteBuilder app)
+    {
+        var enumSerializer = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+        enumSerializer.Converters.Add(new JsonStringEnumConverter());
+
+        var jsonGroup = app.MapGroup("json-serialization").WithTags("Serializer Endpoints");
+        jsonGroup.MapGet(
+            "enum-as-string/",
+            () => TypedResults.Json(
+                new { Property1 = "Value1", Property2 = "Value2", EnumProperty = Example.ImFirst, },
+                enumSerializer)).WithOpenApi();
+        jsonGroup.MapGet(
+            "enum-as-int/",
+            () => TypedResults.Json(
+                new { Property1 = "Value1", Property2 = "Value2", EnumProperty = Example.ImFirst, }));
+    }
+
+    private static void MapEndpointsWithFilterExample(IEndpointRouteBuilder app)
+    {
+        var groupWithInlineFilters = app.MapGroup("inline-filters-example").WithTags("Endpoints With Inline Filters");
     }
 }
