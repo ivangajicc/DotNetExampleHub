@@ -1,0 +1,6 @@
+@MinimalApiCrudWithDtos_HostAddress = http://localhost:5298
+
+GET {{MinimalApiCrudWithDtos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

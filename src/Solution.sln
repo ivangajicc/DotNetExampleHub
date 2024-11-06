@@ -1,18 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitExamples.Tests", "XUnitExamples\XUnitExamples.Tests\XUnitExamples.Tests.csproj", "{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitExamples.Tests", "XUnitExamples\XUnitExamples.Tests\XUnitExamples.Tests.csproj", "{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XunitExamples", "XunitExamples", "{63C64454-F2DE-4A3F-8766-94B908B8786D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiIntegrationTestExample", "WebApiIntegrationTestExample", "{FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiIntegrationTestExample.WebApi", "XUnitExamples\WebApiIntegrationTestExample\WebApi\WebApiIntegrationTestExample.WebApi.csproj", "{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiIntegrationTestExample.WebApi", "XUnitExamples\WebApiIntegrationTestExample\WebApi\WebApiIntegrationTestExample.WebApi.csproj", "{2D40D8E5-0F66-4EBF-A003-8CA6864CF906}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiIntegrationTestExample.WebApi.Integration.Tests", "XUnitExamples\WebApiIntegrationTestExample\WebApi.Integration.Tests\WebApiIntegrationTestExample.WebApi.Integration.Tests.csproj", "{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiIntegrationTestExample.WebApi.Integration.Tests", "XUnitExamples\WebApiIntegrationTestExample\WebApi.Integration.Tests\WebApiIntegrationTestExample.WebApi.Integration.Tests.csproj", "{41EB3D1A-F2F3-4E36-B518-1889D5B505D0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimalApiExample", "MinimalApiExample", "{356D94A0-AD12-40C0-834E-7A884CEC429B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiExample.WebApi", "MinimalApiExample\WebApi\MinimalApiExample.WebApi.csproj", "{D874F240-0F74-4E33-8967-5008BC357FD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApiExample.WebApi", "MinimalApiExample\WebApi\MinimalApiExample.WebApi.csproj", "{D874F240-0F74-4E33-8967-5008BC357FD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimalApiCrudWithDtos", "MinimalApiCrudWithDtos", "{80312DFB-508D-4CAC-B8D2-61CCC9328653}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApiCrudWithDtos.WebApi", "MinimalApiCrudWithDtos\WebApi\MinimalApiCrudWithDtos.WebApi.csproj", "{70A1CE1D-83AB-4039-9A8C-BE3C55480FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiCrudWithDtos.Application", "MinimalApiCrudWithDtos\Application\MinimalApiCrudWithDtos.Application.csproj", "{D25E5555-FD84-49E6-AFEC-1F9449896D38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +45,17 @@ Global
 		{D874F240-0F74-4E33-8967-5008BC357FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D874F240-0F74-4E33-8967-5008BC357FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D874F240-0F74-4E33-8967-5008BC357FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A1CE1D-83AB-4039-9A8C-BE3C55480FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A1CE1D-83AB-4039-9A8C-BE3C55480FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A1CE1D-83AB-4039-9A8C-BE3C55480FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A1CE1D-83AB-4039-9A8C-BE3C55480FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25E5555-FD84-49E6-AFEC-1F9449896D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25E5555-FD84-49E6-AFEC-1F9449896D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25E5555-FD84-49E6-AFEC-1F9449896D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25E5555-FD84-49E6-AFEC-1F9449896D38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{07B52B01-FD80-4E2A-A2FA-32AD7DE9BAB7} = {63C64454-F2DE-4A3F-8766-94B908B8786D}
@@ -43,5 +63,10 @@ Global
 		{2D40D8E5-0F66-4EBF-A003-8CA6864CF906} = {FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2}
 		{41EB3D1A-F2F3-4E36-B518-1889D5B505D0} = {FC8D2B6F-7597-430A-AF11-9E3C61CEE9E2}
 		{D874F240-0F74-4E33-8967-5008BC357FD5} = {356D94A0-AD12-40C0-834E-7A884CEC429B}
+		{70A1CE1D-83AB-4039-9A8C-BE3C55480FE0} = {80312DFB-508D-4CAC-B8D2-61CCC9328653}
+		{D25E5555-FD84-49E6-AFEC-1F9449896D38} = {80312DFB-508D-4CAC-B8D2-61CCC9328653}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
 	EndGlobalSection
 EndGlobal
