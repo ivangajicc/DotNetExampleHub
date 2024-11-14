@@ -33,6 +33,8 @@ csharp_style_expression_bodied_lambdas = true:warning
 csharp_style_expression_bodied_local_functions = true:warning
 max_line_length = 120
 resharper_csharp_max_line_length = 120
+[*.{cs,vb}]                                         //specify which files the spelling options apply to
+spelling_languages = en-us,fr-fr                    //specifies the en-us and fr-fr dictionaries for use in spell checking
 
 [.order]
 insert_final_newline = false

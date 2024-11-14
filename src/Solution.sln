@@ -25,11 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApiCrudWithDtos.Appl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{F6BFE05D-1AEF-494C-8256-6F0475BB596D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Strategy", "DesignPatterns\Strategy\DesignPatterns.Strategy.csproj", "{DEB827F0-904D-4220-ABF7-C0A04C825B14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Strategy", "DesignPatterns\Strategy\DesignPatterns.Strategy.csproj", "{DEB827F0-904D-4220-ABF7-C0A04C825B14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.AbstractFactory", "DesignPatterns\AbstractFactory\DesignPatterns.AbstractFactory.csproj", "{7BC73DCE-0BB0-4C31-AA98-9AB2AB67779E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.AbstractFactory", "DesignPatterns\AbstractFactory\DesignPatterns.AbstractFactory.csproj", "{7BC73DCE-0BB0-4C31-AA98-9AB2AB67779E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.AbstractFactory.Tests", "DesignPatterns\AbstractFactory.Tests\DesignPatterns.AbstractFactory.Tests.csproj", "{BDE39E5C-7374-4272-A0B4-95D981DC9566}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.AbstractFactory.Tests", "DesignPatterns\AbstractFactory.Tests\DesignPatterns.AbstractFactory.Tests.csproj", "{BDE39E5C-7374-4272-A0B4-95D981DC9566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Strategy.DependencyInjection", "DesignPatterns\Stategy.DependencyInjection\DesignPatterns.Strategy.DependencyInjection.csproj", "{9BBA318A-AE9B-452F-AC81-F614A288BBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{BDE39E5C-7374-4272-A0B4-95D981DC9566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDE39E5C-7374-4272-A0B4-95D981DC9566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDE39E5C-7374-4272-A0B4-95D981DC9566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{DEB827F0-904D-4220-ABF7-C0A04C825B14} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{7BC73DCE-0BB0-4C31-AA98-9AB2AB67779E} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{BDE39E5C-7374-4272-A0B4-95D981DC9566} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{9BBA318A-AE9B-452F-AC81-F614A288BBFE} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
