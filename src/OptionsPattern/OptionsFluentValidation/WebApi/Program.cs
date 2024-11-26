@@ -14,12 +14,13 @@ builder.Services
     .AddSingleton<IValidateOptions<MyOptions.Data>, FluentValidateOptions<MyOptions.Data>>();
 
 builder.Services
-    .AddOptions<MyOptions>()
+    .AddOptions<MyOptions.Data>()
+    .BindConfiguration("MyOptions")
     .ValidateOnStart();
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", (IOptionsMonitor<MyOptions.Data> optionsMonitor) => optionsMonitor.CurrentValue.Name);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
