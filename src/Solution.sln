@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.AbstractFact
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Strategy.DependencyInjection", "DesignPatterns\Stategy.DependencyInjection\DesignPatterns.Strategy.DependencyInjection.csproj", "{9BBA318A-AE9B-452F-AC81-F614A288BBFE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Decorator", "DesignPatterns\Decorator\DesignPatterns.Decorator.csproj", "{C9A0F0BA-A2CF-4AC8-BEF3-4CE3B779982A}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptionsPattern", "OptionsPattern", "{EC7F8097-05DE-40F7-B0EF-5B220F746842}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsPattern.CommonScenarios.WebApi", "OptionsPattern\CommonScenarios\WebApi\OptionsPattern.CommonScenarios.WebApi.csproj", "{C3E95F7B-C9C7-4F2B-B17F-8FCCA992B4BF}"
@@ -49,15 +51,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsPattern.OptionsValid
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OptionsFluentValidation", "OptionsFluentValidation", "{94FAFF37-5FAF-4447-B029-7AC9D55C384B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsPattern.OptionsFluentValidation.WebApi", "OptionsPattern\OptionsFluentValidation\WebApi\OptionsPattern.OptionsFluentValidation.WebApi.csproj", "{73A36B0B-E88A-4552-843C-C469EE83FB0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsPattern.OptionsFluentValidation.WebApi", "OptionsPattern\OptionsFluentValidation\WebApi\OptionsPattern.OptionsFluentValidation.WebApi.csproj", "{73A36B0B-E88A-4552-843C-C469EE83FB0F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CentralizingConfiguration", "CentralizingConfiguration", "{77092EBC-F4A8-49C3-9327-54517DE0033B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsPattern.CentralizingConfiguration.WebApi", "OptionsPattern\CentralizingConfiguration\WebApi\OptionsPattern.CentralizingConfiguration.WebApi.csproj", "{F276E5DA-C582-458C-99B8-35705F30A04A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsPattern.CentralizingConfiguration.WebApi", "OptionsPattern\CentralizingConfiguration\WebApi\OptionsPattern.CentralizingConfiguration.WebApi.csproj", "{F276E5DA-C582-458C-99B8-35705F30A04A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfigurationGenerators", "ConfigurationGenerators", "{DA47E686-7BB0-4A6E-B732-4E9327C9D90E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsPattern.ConfigurationGenerators.WebApi", "OptionsPattern\ConfigurationGenerators\WebApi\OptionsPattern.ConfigurationGenerators.WebApi.csproj", "{DE166AC5-0954-458E-99D8-D716401C945E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionsPattern.ConfigurationGenerators.WebApi", "OptionsPattern\ConfigurationGenerators\WebApi\OptionsPattern.ConfigurationGenerators.WebApi.csproj", "{DE166AC5-0954-458E-99D8-D716401C945E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.DecoratorUsingScrutor", "DesignPatterns\DecoratorUsingScrutor\DesignPatterns.DecoratorUsingScrutor.csproj", "{958D6469-B6BD-4E58-A8B5-2620CE93E900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Decorator.Integration.Tests", "DesignPatterns\Decorator.Integration.Tests\DesignPatterns.Decorator.Integration.Tests.csproj", "{DA3D31A3-A1C1-47D5-B2F5-4F860CF2379D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.DecoratorUsingScrutor.Integration.Tests", "DesignPatterns\DecoratorUsingScrutor.Integration.Tests\DesignPatterns.DecoratorUsingScrutor.Integration.Tests.csproj", "{C9E193CB-09FC-408C-9655-64A3CD2DB502}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +113,10 @@ Global
 		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BBA318A-AE9B-452F-AC81-F614A288BBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A0F0BA-A2CF-4AC8-BEF3-4CE3B779982A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A0F0BA-A2CF-4AC8-BEF3-4CE3B779982A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A0F0BA-A2CF-4AC8-BEF3-4CE3B779982A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A0F0BA-A2CF-4AC8-BEF3-4CE3B779982A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3E95F7B-C9C7-4F2B-B17F-8FCCA992B4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3E95F7B-C9C7-4F2B-B17F-8FCCA992B4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3E95F7B-C9C7-4F2B-B17F-8FCCA992B4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,6 +141,18 @@ Global
 		{DE166AC5-0954-458E-99D8-D716401C945E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE166AC5-0954-458E-99D8-D716401C945E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE166AC5-0954-458E-99D8-D716401C945E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958D6469-B6BD-4E58-A8B5-2620CE93E900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958D6469-B6BD-4E58-A8B5-2620CE93E900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958D6469-B6BD-4E58-A8B5-2620CE93E900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958D6469-B6BD-4E58-A8B5-2620CE93E900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3D31A3-A1C1-47D5-B2F5-4F860CF2379D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3D31A3-A1C1-47D5-B2F5-4F860CF2379D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3D31A3-A1C1-47D5-B2F5-4F860CF2379D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3D31A3-A1C1-47D5-B2F5-4F860CF2379D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E193CB-09FC-408C-9655-64A3CD2DB502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E193CB-09FC-408C-9655-64A3CD2DB502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E193CB-09FC-408C-9655-64A3CD2DB502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E193CB-09FC-408C-9655-64A3CD2DB502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,6 +169,7 @@ Global
 		{7BC73DCE-0BB0-4C31-AA98-9AB2AB67779E} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{BDE39E5C-7374-4272-A0B4-95D981DC9566} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{9BBA318A-AE9B-452F-AC81-F614A288BBFE} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{C9A0F0BA-A2CF-4AC8-BEF3-4CE3B779982A} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{C3E95F7B-C9C7-4F2B-B17F-8FCCA992B4BF} = {E5586B9A-26FD-41F0-801F-42A95E3C34BC}
 		{E5586B9A-26FD-41F0-801F-42A95E3C34BC} = {EC7F8097-05DE-40F7-B0EF-5B220F746842}
 		{9CC52536-473C-4A0F-A728-AA8DCF48FB78} = {A891B553-F0FB-48CB-AFD3-649DE3BDF30E}
@@ -157,6 +182,9 @@ Global
 		{F276E5DA-C582-458C-99B8-35705F30A04A} = {77092EBC-F4A8-49C3-9327-54517DE0033B}
 		{DA47E686-7BB0-4A6E-B732-4E9327C9D90E} = {EC7F8097-05DE-40F7-B0EF-5B220F746842}
 		{DE166AC5-0954-458E-99D8-D716401C945E} = {DA47E686-7BB0-4A6E-B732-4E9327C9D90E}
+		{958D6469-B6BD-4E58-A8B5-2620CE93E900} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{DA3D31A3-A1C1-47D5-B2F5-4F860CF2379D} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{C9E193CB-09FC-408C-9655-64A3CD2DB502} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
