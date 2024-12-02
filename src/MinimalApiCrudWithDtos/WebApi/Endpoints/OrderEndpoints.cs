@@ -64,8 +64,7 @@ public static class OrderEndpoints
     {
         var order = await orderRepository.FindAsync(
             orderId,
-            cancellationToken
-        );
+            cancellationToken);
         if (order == null)
         {
             return TypedResults.NotFound();
@@ -73,8 +72,7 @@ public static class OrderEndpoints
 
         var updatedOrder = await orderRepository.UpdateAsync(
             order with { CustomerName = input.CustomerName },
-            cancellationToken
-        );
+            cancellationToken);
         if (updatedOrder == null)
         {
             return TypedResults.Conflict();
@@ -92,8 +90,7 @@ public static class OrderEndpoints
     {
         var createdOrder = await orderRepository.CreateAsync(
             new(0, input.CustomerName, new()),
-            cancellationToken
-        );
+            cancellationToken);
 
         var dto = MapOrderToOrderDetails(createdOrder);
 
@@ -130,9 +127,7 @@ public static class OrderEndpoints
                 DeliveryState: item.Status.State.ToString(),
                 SupplierContactName: item.SupplierInfo.SupplierName,
                 SupplierContactPerson: item.SupplierInfo.ContactPerson,
-                SupplierContactEmail: item.SupplierInfo.ContactEmail))
-        );
+                SupplierContactEmail: item.SupplierInfo.ContactEmail)));
         return dto;
     }
 }
-

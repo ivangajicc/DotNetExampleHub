@@ -25,8 +25,7 @@ public static class MemoryDataStore
                     ItemDescription: "Item 1 desc.",
                     Status: new ItemStatus(
                         TotalQuantity: 200,
-                        QuantityDelivered: 100
-                    ),
+                        QuantityDelivered: 100),
                     SupplierInfo: new SupplierContact(
                         SupplierName: "Easy transport",
                         ContactPerson: "Gajoni",
@@ -37,8 +36,7 @@ public static class MemoryDataStore
                     ItemDescription: "Item 2 desc.",
                     Status: new ItemStatus(
                         TotalQuantity: 333,
-                        QuantityDelivered: 333
-                    ),
+                        QuantityDelivered: 333),
                     SupplierInfo: new SupplierContact(
                         SupplierName: "Easy transport",
                         ContactPerson: "Gajoni",
