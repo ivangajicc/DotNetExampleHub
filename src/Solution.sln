@@ -73,6 +73,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonPracticePatterns.Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonPracticePatterns.OperationResult.RegistrationApplication", "CommonPracticePatterns\OperationResult.RegistrationApplication\RegistrationApplication\CommonPracticePatterns.OperationResult.RegistrationApplication.csproj", "{62F9A2CC-568F-445C-BA28-69211C035832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Composite", "DesignPatterns\Composite\DesignPatterns.Composite.csproj", "{6C82B913-761F-4491-8E00-D736F2ABE0C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Adapter", "DesignPatterns\Adapter\DesignPatterns.Adapter.csproj", "{147A0F77-500D-4A26-B16D-5F8FAB6FF134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Facade", "DesignPatterns\Facade\DesignPatterns.Facade.csproj", "{3A369074-D3AE-47F2-A587-C1E359FF12CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Facade.OpaqueFacadeSubSystem", "DesignPatterns\Facade.OpaqueFacadeSubSystem\DesignPatterns.Facade.OpaqueFacadeSubSystem.csproj", "{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Facade.TransparentFacadeSubSystem", "DesignPatterns\Facade.TransparentFacadeSubSystem\DesignPatterns.Facade.TransparentFacadeSubSystem.csproj", "{661CB3B2-78D7-47E5-8F29-CA5CA496006D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +177,26 @@ Global
 		{62F9A2CC-568F-445C-BA28-69211C035832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62F9A2CC-568F-445C-BA28-69211C035832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62F9A2CC-568F-445C-BA28-69211C035832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C82B913-761F-4491-8E00-D736F2ABE0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C82B913-761F-4491-8E00-D736F2ABE0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C82B913-761F-4491-8E00-D736F2ABE0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C82B913-761F-4491-8E00-D736F2ABE0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147A0F77-500D-4A26-B16D-5F8FAB6FF134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147A0F77-500D-4A26-B16D-5F8FAB6FF134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147A0F77-500D-4A26-B16D-5F8FAB6FF134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147A0F77-500D-4A26-B16D-5F8FAB6FF134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A369074-D3AE-47F2-A587-C1E359FF12CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A369074-D3AE-47F2-A587-C1E359FF12CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A369074-D3AE-47F2-A587-C1E359FF12CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A369074-D3AE-47F2-A587-C1E359FF12CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +231,11 @@ Global
 		{C9E193CB-09FC-408C-9655-64A3CD2DB502} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{C5227B79-301D-414F-BB12-F589CF47387B} = {55C49E0D-F7ED-4A87-9D06-05D327CFF84E}
 		{62F9A2CC-568F-445C-BA28-69211C035832} = {55C49E0D-F7ED-4A87-9D06-05D327CFF84E}
+		{6C82B913-761F-4491-8E00-D736F2ABE0C1} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{147A0F77-500D-4A26-B16D-5F8FAB6FF134} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{3A369074-D3AE-47F2-A587-C1E359FF12CD} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{661CB3B2-78D7-47E5-8F29-CA5CA496006D} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
