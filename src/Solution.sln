@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.TemplateMeth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.ChainOfRespnsibility", "DesignPatterns\ChainOfRespnsibility\DesignPatterns.ChainOfRespnsibility.csproj", "{36290127-F07E-4FCC-AF30-42A3C92926A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationPatterns", "ApplicationPatterns", "{B7200BC4-8A8B-4F1E-B6C7-3F6E62CB2697}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
