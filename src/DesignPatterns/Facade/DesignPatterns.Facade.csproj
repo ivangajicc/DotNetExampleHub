@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Facade.OpaqueFacadeSubSystem\Facade.OpaqueFacadeSubSystem\DesignPatterns.Facade.OpaqueFacadeSubSystem.csproj" />
+    <ProjectReference Include="..\Facade.OpaqueFacadeSubSystem\DesignPatterns.Facade.OpaqueFacadeSubSystem.csproj" />
     <ProjectReference Include="..\Facade.TransparentFacadeSubSystem\DesignPatterns.Facade.TransparentFacadeSubSystem.csproj" />
   </ItemGroup>
 
