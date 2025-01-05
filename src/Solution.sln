@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Facade.Opaqu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Facade.TransparentFacadeSubSystem", "DesignPatterns\Facade.TransparentFacadeSubSystem\DesignPatterns.Facade.TransparentFacadeSubSystem.csproj", "{661CB3B2-78D7-47E5-8F29-CA5CA496006D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.TemplateMethod", "DesignPatterns\TemplateMethod\DesignPatterns.TemplateMethod.csproj", "{0E1CEBB8-D3A4-4265-A21B-2DFDB2C6C8B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -197,6 +199,10 @@ Global
 		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{661CB3B2-78D7-47E5-8F29-CA5CA496006D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1CEBB8-D3A4-4265-A21B-2DFDB2C6C8B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1CEBB8-D3A4-4265-A21B-2DFDB2C6C8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1CEBB8-D3A4-4265-A21B-2DFDB2C6C8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1CEBB8-D3A4-4265-A21B-2DFDB2C6C8B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -236,6 +242,7 @@ Global
 		{3A369074-D3AE-47F2-A587-C1E359FF12CD} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{7660E78F-F0B4-4DB1-9F81-EC4E16563FBA} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 		{661CB3B2-78D7-47E5-8F29-CA5CA496006D} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{0E1CEBB8-D3A4-4265-A21B-2DFDB2C6C8B6} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
