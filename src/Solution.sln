@@ -92,6 +92,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationPatterns", "Appl
 		ApplicationPatterns\Application-Patterns.md = ApplicationPatterns\Application-Patterns.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemArchitectureStyles", "SystemArchitectureStyles", "{66EFF83A-0D46-4106-B7D8-A5DB050C853D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
