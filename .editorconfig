@@ -33,6 +33,11 @@ csharp_style_expression_bodied_lambdas = true:warning
 csharp_style_expression_bodied_local_functions = true:warning
 max_line_length = 120
 resharper_csharp_max_line_length = 120
+csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_prefer_top_level_statements = true:silent
+csharp_style_prefer_primary_constructors = true:suggestion
+csharp_prefer_system_threading_lock = true:suggestion
+dotnet_diagnostic.SA1649.severity = silent
 [*.{cs,vb}]                                         //specify which files the spelling options apply to
 spelling_languages = en-us,fr-fr                    //specifies the en-us and fr-fr dictionaries for use in spell checking
 
@@ -1063,6 +1068,8 @@ dotnet_diagnostic.RCS1229.severity = error
 
 # IDE0005: Using directive is unnecessary
 dotnet_diagnostic.IDE0005.severity = none
+tab_width = 4
+end_of_line = crlf
 
 [**/Migrations/*.cs]
 generated_code = true
