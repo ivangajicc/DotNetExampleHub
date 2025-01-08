@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SharedKernel\Result\SharedKernel.Result.csproj" />
+    <ProjectReference Include="..\Core\CleanArchitecture.Core.csproj" />
   </ItemGroup>
 
 </Project>

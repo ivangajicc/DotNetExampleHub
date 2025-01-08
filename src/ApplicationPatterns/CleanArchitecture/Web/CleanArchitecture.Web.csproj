@@ -8,12 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="FastEndpoints" Version="5.33.0" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.33.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\CleanArchitecture.Infrastructure.csproj" />
     <ProjectReference Include="..\UseCases\CleanArchitecture.UseCases.csproj" />
   </ItemGroup>
 

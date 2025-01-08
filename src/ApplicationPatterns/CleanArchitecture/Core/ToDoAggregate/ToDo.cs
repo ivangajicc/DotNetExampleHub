@@ -9,6 +9,8 @@ namespace CleanArchitecture.Core.ToDoAggregate;
 
 public class ToDo(string description)
 {
+    public Guid Id { get; set; }
+
     public string Description { get; private set; } = description;
 
     public bool IsResolved { get; private set; }

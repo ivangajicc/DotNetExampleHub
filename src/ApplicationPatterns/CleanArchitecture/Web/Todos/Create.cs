@@ -20,7 +20,7 @@ public class Create(IMediator mediator) : Endpoint<CreateTodoRequest, CreateTodo
     {
         var result = await mediator.Send(new CreateTodoCommand(request.Description), ct);
 
-        if (result?.Succeeded == true)
+        if (result.Succeeded)
         {
             Response = new CreateTodoResponse(new TodoRecord(result.Value.IsResolved, result.Value.Description));
         }

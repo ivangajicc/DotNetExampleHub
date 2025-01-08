@@ -35,7 +35,7 @@ public class Result<T>
 
     public static implicit operator Result<T>(Result result) => new(default!)
     {
-        Succeeded = false,
+        Succeeded = false, // If we are returning Result from method declared to return Result<T> it is not successful path.
         Messages = [..result.Messages],
     };
 }
