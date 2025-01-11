@@ -92,3 +92,6 @@ typings/
 # System Files
 .DS_Store
 Thumbs.db
+/src/ApplicationPatterns/CleanArchitecture/Web/database.sqlite-shm
+/src/ApplicationPatterns/CleanArchitecture/Web/database.sqlite-wal
+/src/ApplicationPatterns/CleanArchitecture/Web/database.sqlite
