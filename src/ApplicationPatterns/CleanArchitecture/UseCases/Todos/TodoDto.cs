@@ -6,4 +6,4 @@ using System.Threading.Tasks;
 
 namespace CleanArchitecture.UseCases.Todos;
 
-public record TodoDto(bool IsResolved, string Description);
+public record TodoDto(Guid Id, bool IsResolved, string Description);

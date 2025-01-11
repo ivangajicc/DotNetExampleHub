@@ -26,4 +26,10 @@ public class Result
     public bool Succeeded { get; private init; } = true;
 
     public ImmutableList<OperationResultMessage> Messages { get; private init; } = [];
+
+    public static Result Failure(params OperationResultMessage[] errors) => new FailedResult(errors);
+
+    public static Result NotFound(params OperationResultMessage[] errors) => new NotFoundResult(errors);
+
+    public static Result Success() => new SuccessfulResult();
 }

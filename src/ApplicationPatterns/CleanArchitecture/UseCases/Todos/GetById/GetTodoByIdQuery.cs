@@ -7,6 +7,6 @@ using CleanArchitecture.UseCases.Abstractions;
 using MediatR;
 using SharedKernel.Result;
 
-namespace CleanArchitecture.UseCases.Todos.Create;
+namespace CleanArchitecture.UseCases.Todos.GetById;
 
-public record CreateTodoCommand(string Description) : ICommand<TodoDto>;
+public record GetTodoByIdQuery(Guid Id) : IQuery<TodoDto>;

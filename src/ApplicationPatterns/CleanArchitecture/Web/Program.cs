@@ -1,3 +1,4 @@
+using CleanArchitecture.Core.Extensions;
 using CleanArchitecture.Infrastructure.Extensions;
 using CleanArchitecture.Web.Extensions;
 using FastEndpoints;
@@ -8,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .RegisterInfrastructure(builder.Configuration)
-    .AddMediatrConfigs();
+    .AddMediatr()
+    .AddDomainServices();
 
 builder.Services.AddFastEndpoints()
                 .SwaggerDocument(o => o.ShortSchemaNames = true);

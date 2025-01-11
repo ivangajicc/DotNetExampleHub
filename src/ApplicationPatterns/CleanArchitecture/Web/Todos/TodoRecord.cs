@@ -1,3 +1,3 @@
 namespace CleanArchitecture.Web.Todos;
 
-public record TodoRecord(bool IsResolved, string Description);
+public record TodoRecord(Guid Id, bool IsResolved, string Description);

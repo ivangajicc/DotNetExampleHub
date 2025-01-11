@@ -9,7 +9,7 @@ namespace CleanArchitecture.Web.Extensions;
 
 public static class Startup
 {
-    public static IServiceCollection AddMediatrConfigs(this IServiceCollection services)
+    public static IServiceCollection AddMediatr(this IServiceCollection services)
     {
         Assembly[] mediatRAssemblies = [ Assembly.GetAssembly(typeof(ToDo))!, // Core
         Assembly.GetAssembly(typeof(CreateTodoCommand))!, // UseCases

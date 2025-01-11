@@ -11,6 +11,12 @@ namespace SharedKernel.Result;
 
 public class Result<T>
 {
+    protected Result(params OperationResultMessage[] messages)
+    {
+        Succeeded = false;
+        Messages = [.. messages];
+    }
+
     protected Result(T value)
     {
         Value = value;
@@ -33,9 +39,9 @@ public class Result<T>
 
     public ImmutableList<OperationResultMessage> Messages { get; private init; } = [];
 
-    public static implicit operator Result<T>(Result result) => new(default!)
-    {
-        Succeeded = false, // If we are returning Result from method declared to return Result<T> it is not successful path.
-        Messages = [..result.Messages],
-    };
+    public static Result<T> Failure(params OperationResultMessage[] errors) => new FailedResult<T>(errors);
+
+    public static Result<T> NotFound(params OperationResultMessage[] errors) => new NotFoundResult<T>(errors);
+
+    public static Result<T> Success(T value) => new SuccessfulResult<T>(value);
 }

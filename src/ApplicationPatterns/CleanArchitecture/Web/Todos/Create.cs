@@ -22,7 +22,7 @@ public class Create(IMediator mediator) : Endpoint<CreateTodoRequest, CreateTodo
 
         if (result.Succeeded)
         {
-            Response = new CreateTodoResponse(new TodoRecord(result.Value.IsResolved, result.Value.Description));
+            Response = new CreateTodoResponse(new TodoRecord(result.Value.Id, result.Value.IsResolved, result.Value.Description));
         }
     }
 }
