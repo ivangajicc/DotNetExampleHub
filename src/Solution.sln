@@ -92,8 +92,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationPatterns", "Appl
 		ApplicationPatterns\Application-Patterns.md = ApplicationPatterns\Application-Patterns.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemArchitectureStyles", "SystemArchitectureStyles", "{66EFF83A-0D46-4106-B7D8-A5DB050C853D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Web", "ApplicationPatterns\CleanArchitecture\Web\CleanArchitecture.Web.csproj", "{238B56BD-1575-405A-BF5D-A65D290350A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.UseCases", "ApplicationPatterns\CleanArchitecture\UseCases\CleanArchitecture.UseCases.csproj", "{5DEF9B92-99C8-4404-AD79-BE0757215A59}"
@@ -107,6 +105,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{1A30FEB5-69DD-44E0-9A15-09CD03400082}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel.Result", "ApplicationPatterns\SharedKernel\Result\SharedKernel.Result.csproj", "{F92D7BBD-CB7F-4421-83AE-2C0A46B00333}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{173C4BD2-C785-4E5F-9796-10AC0E8A9F96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MappingService", "MappingService", "{CC60AEE5-0589-4D2E-AD98-5E5545BC5F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.MappingService.WebApi", "Utilities\MappingService\WebApi\Utilities.MappingService.WebApi.csproj", "{95BE1E4F-503D-4B5A-A3A1-9F29B64493E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.MappingService.Core", "Utilities\MappingService\Core\Utilities.MappingService.Core.csproj", "{EC7D76A3-AE44-4928-8E81-B3A30C30E187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.MappingService.FakeInfrastructure", "Utilities\MappingService\FakeInfrastracture\Utilities.MappingService.FakeInfrastructure.csproj", "{27D4D853-5858-4B2E-87D4-9BFBA90E1FE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -250,6 +258,18 @@ Global
 		{F92D7BBD-CB7F-4421-83AE-2C0A46B00333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F92D7BBD-CB7F-4421-83AE-2C0A46B00333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F92D7BBD-CB7F-4421-83AE-2C0A46B00333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BE1E4F-503D-4B5A-A3A1-9F29B64493E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BE1E4F-503D-4B5A-A3A1-9F29B64493E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BE1E4F-503D-4B5A-A3A1-9F29B64493E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BE1E4F-503D-4B5A-A3A1-9F29B64493E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7D76A3-AE44-4928-8E81-B3A30C30E187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7D76A3-AE44-4928-8E81-B3A30C30E187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7D76A3-AE44-4928-8E81-B3A30C30E187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7D76A3-AE44-4928-8E81-B3A30C30E187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D4D853-5858-4B2E-87D4-9BFBA90E1FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D4D853-5858-4B2E-87D4-9BFBA90E1FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D4D853-5858-4B2E-87D4-9BFBA90E1FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D4D853-5858-4B2E-87D4-9BFBA90E1FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,6 +318,10 @@ Global
 		{5C39F78A-A733-48CB-B232-8E15259D3C9E} = {B7200BC4-8A8B-4F1E-B6C7-3F6E62CB2697}
 		{1A30FEB5-69DD-44E0-9A15-09CD03400082} = {B7200BC4-8A8B-4F1E-B6C7-3F6E62CB2697}
 		{F92D7BBD-CB7F-4421-83AE-2C0A46B00333} = {1A30FEB5-69DD-44E0-9A15-09CD03400082}
+		{CC60AEE5-0589-4D2E-AD98-5E5545BC5F28} = {173C4BD2-C785-4E5F-9796-10AC0E8A9F96}
+		{95BE1E4F-503D-4B5A-A3A1-9F29B64493E8} = {CC60AEE5-0589-4D2E-AD98-5E5545BC5F28}
+		{EC7D76A3-AE44-4928-8E81-B3A30C30E187} = {CC60AEE5-0589-4D2E-AD98-5E5545BC5F28}
+		{27D4D853-5858-4B2E-87D4-9BFBA90E1FE9} = {CC60AEE5-0589-4D2E-AD98-5E5545BC5F28}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
