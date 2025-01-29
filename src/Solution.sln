@@ -132,6 +132,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Mapperly.Core", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Mapperly.FakeInfrastructure", "Utilities\Mapperly\FakeInfrastructure\Utilities.Mapperly.FakeInfrastructure.csproj", "{9393DBE1-2992-48D2-B2F2-3759256949F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Mediator", "DesignPatterns\Mediator\DesignPatterns.Mediator.csproj", "{F6311DCC-CD00-4ADA-B28E-750CB6D55D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Mediator.Tests", "DesignPatterns\Mediator.Tests\DesignPatterns.Mediator.Tests.csproj", "{8EAF5185-CAC7-4CB8-9EE2-D5B4E2CE2B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonPracticePatterns.CQS", "CommonPracticePatterns\CQS\CommonPracticePatterns.CQS.csproj", "{DC2CB917-CC77-4C25-AAEE-52D92ED9A523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonPracticePatterns.CQS.Tests", "CommonPracticePatterns\CQS.Tests\CommonPracticePatterns.CQS.Tests.csproj", "{84DB3A65-CD14-4198-ABB1-6EABA6B065F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -310,6 +318,22 @@ Global
 		{9393DBE1-2992-48D2-B2F2-3759256949F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9393DBE1-2992-48D2-B2F2-3759256949F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9393DBE1-2992-48D2-B2F2-3759256949F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6311DCC-CD00-4ADA-B28E-750CB6D55D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6311DCC-CD00-4ADA-B28E-750CB6D55D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6311DCC-CD00-4ADA-B28E-750CB6D55D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6311DCC-CD00-4ADA-B28E-750CB6D55D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EAF5185-CAC7-4CB8-9EE2-D5B4E2CE2B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAF5185-CAC7-4CB8-9EE2-D5B4E2CE2B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAF5185-CAC7-4CB8-9EE2-D5B4E2CE2B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAF5185-CAC7-4CB8-9EE2-D5B4E2CE2B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2CB917-CC77-4C25-AAEE-52D92ED9A523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2CB917-CC77-4C25-AAEE-52D92ED9A523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2CB917-CC77-4C25-AAEE-52D92ED9A523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2CB917-CC77-4C25-AAEE-52D92ED9A523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84DB3A65-CD14-4198-ABB1-6EABA6B065F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84DB3A65-CD14-4198-ABB1-6EABA6B065F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84DB3A65-CD14-4198-ABB1-6EABA6B065F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84DB3A65-CD14-4198-ABB1-6EABA6B065F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -370,6 +394,10 @@ Global
 		{84AAD5FF-B305-4C23-9A75-1596CA0F26A5} = {48C8735B-BA7F-445E-BD51-1749AF207191}
 		{960F5374-5616-44D2-AD51-DE5EF09B2F66} = {48C8735B-BA7F-445E-BD51-1749AF207191}
 		{9393DBE1-2992-48D2-B2F2-3759256949F2} = {48C8735B-BA7F-445E-BD51-1749AF207191}
+		{F6311DCC-CD00-4ADA-B28E-750CB6D55D41} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{8EAF5185-CAC7-4CB8-9EE2-D5B4E2CE2B0A} = {F6BFE05D-1AEF-494C-8256-6F0475BB596D}
+		{DC2CB917-CC77-4C25-AAEE-52D92ED9A523} = {55C49E0D-F7ED-4A87-9D06-05D327CFF84E}
+		{84DB3A65-CD14-4198-ABB1-6EABA6B065F8} = {55C49E0D-F7ED-4A87-9D06-05D327CFF84E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
