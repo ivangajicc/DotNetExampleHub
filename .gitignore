@@ -95,3 +95,6 @@ Thumbs.db
 /src/ApplicationPatterns/CleanArchitecture/Web/database.sqlite-shm
 /src/ApplicationPatterns/CleanArchitecture/Web/database.sqlite-wal
 /src/ApplicationPatterns/CleanArchitecture/Web/database.sqlite
+/src/ApplicationPatterns/VerticalSliceArchitecture/API/database.sqlite
+/src/ApplicationPatterns/VerticalSliceArchitecture/API/database.sqlite-shm
+/src/ApplicationPatterns/VerticalSliceArchitecture/API/database.sqlite-wal
