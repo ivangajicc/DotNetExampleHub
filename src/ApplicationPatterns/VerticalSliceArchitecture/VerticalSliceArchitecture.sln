@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSliceArchitecture.API", "API\VerticalSliceArchitecture.API.csproj", "{63D8EA3C-8AEB-490F-8F7F-D880C6046276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSliceArchitecture.Application", "Application\VerticalSliceArchitecture.Application.csproj", "{56171211-EF06-4DEF-8C67-D023CF1AFA20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63D8EA3C-8AEB-490F-8F7F-D880C6046276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D8EA3C-8AEB-490F-8F7F-D880C6046276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D8EA3C-8AEB-490F-8F7F-D880C6046276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D8EA3C-8AEB-490F-8F7F-D880C6046276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56171211-EF06-4DEF-8C67-D023CF1AFA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56171211-EF06-4DEF-8C67-D023CF1AFA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56171211-EF06-4DEF-8C67-D023CF1AFA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56171211-EF06-4DEF-8C67-D023CF1AFA20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

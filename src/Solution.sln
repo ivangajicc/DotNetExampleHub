@@ -144,7 +144,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VerticalSliceArchitecture",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSliceArchitecture.API", "ApplicationPatterns\VerticalSliceArchitecture\API\VerticalSliceArchitecture.API.csproj", "{7265BA0E-6A58-4234-BF86-46F26284088D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSliceArchitecture.Application", "Application\VerticalSliceArchitecture.Application.csproj", "{3D00792B-7753-4D5F-BF46-3180C0A04962}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSliceArchitecture.Application", "ApplicationPatterns\VerticalSliceArchitecture\Application\VerticalSliceArchitecture.Application.csproj", "{3D00792B-7753-4D5F-BF46-3180C0A04962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

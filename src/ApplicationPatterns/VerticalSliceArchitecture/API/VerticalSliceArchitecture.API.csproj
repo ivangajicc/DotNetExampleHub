@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Application\VerticalSliceArchitecture.Application.csproj" />
+    <ProjectReference Include="..\Application\VerticalSliceArchitecture.Application.csproj" />
   </ItemGroup>
 
 </Project>
