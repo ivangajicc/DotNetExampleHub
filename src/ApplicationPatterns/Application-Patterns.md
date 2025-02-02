@@ -36,3 +36,12 @@ Clean Architecture is an evolution of layered architecture, refining the way lay
 The core principle of Clean Architecture is the dependency rule, which dictates that dependencies must always flow inward—outer layers depend on inner layers. This places abstractions such as interfaces and domain entities (the domain model) at the core, while concrete implementations like interface implementations and user interfaces (the presentation) reside in the outer layers.
 
 Clean Architecture is particularly suitable for domain-heavy or logic-intensive projects, as it centralizes logic, enhancing reusability and maintainability.
+
+## Vertical slice architecture
+
+”The goal is to minimize coupling between slices and maximize coupling within a slice.”
+
+One way to interpret this is that each vertical slice should be independent, ensuring that modifying one slice does not affect others due to minimal coupling.
+
+Vertical Slice Architecture focuses on building applications around business problems rather than typical developer concerns. Users, for instance, are not interested in data access code but care about features like an advanced search they are eagerly anticipating.
+
