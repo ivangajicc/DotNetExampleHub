@@ -39,6 +39,9 @@ public class Result<T>
 
     public ImmutableList<OperationResultMessage> Messages { get; private init; } = [];
 
+    // Implicit conversion from Result to Result<T>
+    public static implicit operator Result<T>(Result result) => new([.. result.Messages]);
+
     public static Result<T> Failure(params OperationResultMessage[] errors) => new FailedResult<T>(errors);
 
     public static Result<T> NotFound(params OperationResultMessage[] errors) => new NotFoundResult<T>(errors);
