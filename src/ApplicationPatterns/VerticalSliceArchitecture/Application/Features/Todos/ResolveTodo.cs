@@ -22,6 +22,7 @@ public class ResolveTodoController : ApiControllerBase
     {
         var result = await Mediator.Send(new ResolveTodo.Command(id));
 
+        // We can create same Result handling extension for ApiControllerBase as we did for IEndPoint in clean architecture.
         if (result.Succeeded)
         {
             return Ok();

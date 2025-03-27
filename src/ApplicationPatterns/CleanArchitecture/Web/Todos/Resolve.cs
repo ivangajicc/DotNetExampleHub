@@ -23,15 +23,6 @@ public class Resolve(IMediator mediator)
 
         var result = await mediator.Send(command, ct);
 
-        if (result is NotFoundResult)
-        {
-            await SendNotFoundAsync(ct);
-            return;
-        }
-
-        if (result.Succeeded)
-        {
-            await SendNoContentAsync(ct);
-        }
+        await this.SendResponseAsync(result);
     }
 }

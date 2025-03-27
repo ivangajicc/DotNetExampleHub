@@ -20,14 +20,6 @@ public class GetById(IMediator mediator) : Endpoint<GetTodoByIdRequest, TodoReco
 
         var result = await mediator.Send(request, ct);
 
-        if (result is NotFoundResult<TodoDto>)
-        {
-            await SendNotFoundAsync(ct);
-        }
-
-        if (result.Succeeded)
-        {
-            Response = new TodoRecord(result.Value.Id, result.Value.IsResolved, result.Value.Description);
-        }
+        await this.SendResponseAsync(result);
     }
 }

@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SharedKernel\Result\SharedKernel.Result.csproj" />
+    <ProjectReference Include="..\..\SharedKernel\Result.FastEndpoints\SharedKernel.Result.FastEndpoints.csproj" />
   </ItemGroup>
 
 </Project>

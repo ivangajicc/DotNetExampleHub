@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FastEndpoints" Version="5.33.0" />
     <PackageReference Include="FastEndpoints.Swagger" Version="5.33.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
@@ -15,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SharedKernel\Result.FastEndpoints\SharedKernel.Result.FastEndpoints.csproj" />
     <ProjectReference Include="..\Infrastructure\CleanArchitecture.Infrastructure.csproj" />
     <ProjectReference Include="..\UseCases\CleanArchitecture.UseCases.csproj" />
   </ItemGroup>

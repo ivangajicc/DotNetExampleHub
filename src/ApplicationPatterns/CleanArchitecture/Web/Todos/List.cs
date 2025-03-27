@@ -17,12 +17,6 @@ public class List(IMediator mediator) : EndpointWithoutRequest<ListTodoResponse>
     {
         var result = await mediator.Send(new ListTodosQuery(null, null), ct);
 
-        if (result.Succeeded)
-        {
-            Response = new ListTodoResponse
-            {
-                Todos = result.Value.Select(todo => new TodoRecord(todo.Id, todo.IsResolved, todo.Description)).ToList(),
-            };
-        }
+        await this.SendResponseAsync(result);
     }
 }

@@ -20,6 +20,7 @@ public class ListTodosController : ApiControllerBase
     {
         var result = await Mediator.Send(new ListTodos.Command());
 
+        // We can create same Result handling extension for ApiControllerBase as we did for IEndPoint in clean architecture.
         if (result.Succeeded)
         {
             return Ok(result.Value);

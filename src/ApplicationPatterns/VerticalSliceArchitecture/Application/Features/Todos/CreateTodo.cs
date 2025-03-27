@@ -19,6 +19,7 @@ public class CreateTodoController : ApiControllerBase
     {
         var result = await Mediator.Send(new CreateTodo.Command(todoDetails));
 
+        // We can create same Result handling extension for ApiControllerBase as we did for IEndPoint in clean architecture.
         if (result.Succeeded)
         {
             return Ok();

@@ -168,6 +168,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendForFrontend", "Backe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendForFrontend.WebApi", "ArchitecturePatterns\MicroServices\BackendForFrontend\WebApi\BackendForFrontend.WebApi.csproj", "{FE52DB8D-DDFD-42B8-871D-1856304146FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel.Result.FastEndpoints", "ApplicationPatterns\SharedKernel\Result.FastEndpoints\SharedKernel.Result.FastEndpoints.csproj", "{4DB2599A-7BBB-4F33-A90E-91A9002F478D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -390,6 +392,10 @@ Global
 		{FE52DB8D-DDFD-42B8-871D-1856304146FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE52DB8D-DDFD-42B8-871D-1856304146FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE52DB8D-DDFD-42B8-871D-1856304146FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB2599A-7BBB-4F33-A90E-91A9002F478D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB2599A-7BBB-4F33-A90E-91A9002F478D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB2599A-7BBB-4F33-A90E-91A9002F478D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB2599A-7BBB-4F33-A90E-91A9002F478D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -467,6 +473,7 @@ Global
 		{0DFE0EBA-0F4F-4E28-8F8E-F55B0D2A94D6} = {5CF03DC1-8EB2-428C-AC4A-D5D59125A523}
 		{1268C1DB-0947-4C5B-949A-5AE9ADB91DD2} = {5CF03DC1-8EB2-428C-AC4A-D5D59125A523}
 		{FE52DB8D-DDFD-42B8-871D-1856304146FC} = {1268C1DB-0947-4C5B-949A-5AE9ADB91DD2}
+		{4DB2599A-7BBB-4F33-A90E-91A9002F478D} = {1A30FEB5-69DD-44E0-9A15-09CD03400082}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98159092-4EA8-4738-968B-D05C18EA9704}
